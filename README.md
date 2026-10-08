@@ -1,4 +1,4 @@
-# IEOR 4733 — Deep Reinforcement Learning for Trading
+# Dashboard for a Reproduction of “Deep Reinforcement Learning for Trading"
 
 Reproduction of **Zhang, Zohren, Roberts (2019)** — *Deep Reinforcement Learning for Trading* — extended with an A2C regime-detection branch and an interactive Streamlit dashboard.
 
