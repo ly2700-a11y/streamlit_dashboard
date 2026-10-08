@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-04-27T13:46:42.796976",
+  "config": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/dqn/train/training_config.yaml",
+  "preset": "structural_38",
+  "sigma_tgt": 0.058,
+  "seeds": 5,
+  "early_stopping_patience": 20,
+  "episodes": 200,
+  "tasks_total": 18,
+  "tasks_completed": 18,
+  "tasks_failed": 0,
+  "elapsed_seconds": 7490
+}

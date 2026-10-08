@@ -1,0 +1,306 @@
+{
+  "Commodity|top3|r1": {
+    "metrics": {
+      "E(R)": -0.177,
+      "std(R)": 0.145,
+      "DD": 0.129,
+      "Sharpe": -1.217,
+      "Sortino": -1.366,
+      "MDD": 0.07,
+      "Calmar": -0.104,
+      "% +ve": 0.263,
+      "Ave P/L": 0.857
+    },
+    "seeds": [
+      42,
+      48,
+      45
+    ]
+  },
+  "Commodity|top3|r2": {
+    "metrics": {
+      "E(R)": -0.08,
+      "std(R)": 0.184,
+      "DD": 0.168,
+      "Sharpe": -0.436,
+      "Sortino": -0.48,
+      "MDD": 0.034,
+      "Calmar": -0.097,
+      "% +ve": 0.215,
+      "Ave P/L": 0.956
+    },
+    "seeds": [
+      49,
+      46,
+      43
+    ]
+  },
+  "Commodity|top5|r1": {
+    "metrics": {
+      "E(R)": -0.161,
+      "std(R)": 0.146,
+      "DD": 0.131,
+      "Sharpe": -1.1,
+      "Sortino": -1.225,
+      "MDD": 0.068,
+      "Calmar": -0.098,
+      "% +ve": 0.267,
+      "Ave P/L": 0.852
+    },
+    "seeds": [
+      42,
+      48,
+      45,
+      50,
+      44
+    ]
+  },
+  "Commodity|top5|r2": {
+    "metrics": {
+      "E(R)": -0.067,
+      "std(R)": 0.19,
+      "DD": 0.174,
+      "Sharpe": -0.352,
+      "Sortino": -0.385,
+      "MDD": 0.028,
+      "Calmar": -0.095,
+      "% +ve": 0.213,
+      "Ave P/L": 0.995
+    },
+    "seeds": [
+      49,
+      46,
+      43,
+      45,
+      48
+    ]
+  },
+  "Equity_Index|top3|r1": {
+    "metrics": {
+      "E(R)": NaN,
+      "std(R)": NaN,
+      "DD": 0.0,
+      "Sharpe": 0.0,
+      "Sortino": 0.0,
+      "MDD": 0.0,
+      "Calmar": 0.0,
+      "% +ve": 0.0,
+      "Ave P/L": 0.0
+    },
+    "seeds": [
+      42,
+      45,
+      50
+    ]
+  },
+  "Equity_Index|top3|r2": {
+    "metrics": {
+      "E(R)": NaN,
+      "std(R)": NaN,
+      "DD": 0.0,
+      "Sharpe": 0.0,
+      "Sortino": 0.0,
+      "MDD": 0.0,
+      "Calmar": 0.0,
+      "% +ve": 0.0,
+      "Ave P/L": 0.0
+    },
+    "seeds": [
+      42,
+      47,
+      50
+    ]
+  },
+  "Equity_Index|top5|r1": {
+    "metrics": {
+      "E(R)": NaN,
+      "std(R)": NaN,
+      "DD": 0.0,
+      "Sharpe": 0.0,
+      "Sortino": 0.0,
+      "MDD": 0.0,
+      "Calmar": 0.0,
+      "% +ve": 0.0,
+      "Ave P/L": 0.0
+    },
+    "seeds": [
+      42,
+      45,
+      50,
+      48,
+      43
+    ]
+  },
+  "Equity_Index|top5|r2": {
+    "metrics": {
+      "E(R)": NaN,
+      "std(R)": NaN,
+      "DD": 0.0,
+      "Sharpe": 0.0,
+      "Sortino": 0.0,
+      "MDD": 0.0,
+      "Calmar": 0.0,
+      "% +ve": 0.0,
+      "Ave P/L": 0.0
+    },
+    "seeds": [
+      42,
+      47,
+      50,
+      43,
+      46
+    ]
+  },
+  "Fixed_Income|top3|r1": {
+    "metrics": {
+      "E(R)": NaN,
+      "std(R)": NaN,
+      "DD": 0.0,
+      "Sharpe": 0.0,
+      "Sortino": 0.0,
+      "MDD": 0.0,
+      "Calmar": 0.0,
+      "% +ve": 0.0,
+      "Ave P/L": 0.0
+    },
+    "seeds": [
+      47,
+      44,
+      51
+    ]
+  },
+  "Fixed_Income|top3|r2": {
+    "metrics": {
+      "E(R)": NaN,
+      "std(R)": NaN,
+      "DD": 0.0,
+      "Sharpe": 0.0,
+      "Sortino": 0.0,
+      "MDD": 0.0,
+      "Calmar": 0.0,
+      "% +ve": 0.0,
+      "Ave P/L": 0.0
+    },
+    "seeds": [
+      42,
+      47,
+      49
+    ]
+  },
+  "Fixed_Income|top5|r1": {
+    "metrics": {
+      "E(R)": NaN,
+      "std(R)": NaN,
+      "DD": 0.0,
+      "Sharpe": 0.0,
+      "Sortino": 0.0,
+      "MDD": 0.0,
+      "Calmar": 0.0,
+      "% +ve": 0.0,
+      "Ave P/L": 0.0
+    },
+    "seeds": [
+      47,
+      44,
+      51,
+      48,
+      50
+    ]
+  },
+  "Fixed_Income|top5|r2": {
+    "metrics": {
+      "E(R)": NaN,
+      "std(R)": NaN,
+      "DD": 0.0,
+      "Sharpe": 0.0,
+      "Sortino": 0.0,
+      "MDD": 0.0,
+      "Calmar": 0.0,
+      "% +ve": 0.0,
+      "Ave P/L": 0.0
+    },
+    "seeds": [
+      42,
+      47,
+      49,
+      43,
+      44
+    ]
+  },
+  "Forex|top3|r1": {
+    "metrics": {
+      "E(R)": -0.377,
+      "std(R)": 0.275,
+      "DD": 0.257,
+      "Sharpe": -1.374,
+      "Sortino": -1.466,
+      "MDD": 0.414,
+      "Calmar": -0.125,
+      "% +ve": 0.254,
+      "Ave P/L": 0.862
+    },
+    "seeds": [
+      46,
+      47,
+      44
+    ]
+  },
+  "Forex|top3|r2": {
+    "metrics": {
+      "E(R)": -0.028,
+      "std(R)": 0.067,
+      "DD": 0.105,
+      "Sharpe": -0.417,
+      "Sortino": -0.265,
+      "MDD": 0.048,
+      "Calmar": -0.066,
+      "% +ve": 0.108,
+      "Ave P/L": 0.942
+    },
+    "seeds": [
+      47,
+      45,
+      48
+    ]
+  },
+  "Forex|top5|r1": {
+    "metrics": {
+      "E(R)": -0.393,
+      "std(R)": 0.284,
+      "DD": 0.263,
+      "Sharpe": -1.384,
+      "Sortino": -1.498,
+      "MDD": 0.418,
+      "Calmar": -0.13,
+      "% +ve": 0.252,
+      "Ave P/L": 0.873
+    },
+    "seeds": [
+      46,
+      47,
+      44,
+      48,
+      50
+    ]
+  },
+  "Forex|top5|r2": {
+    "metrics": {
+      "E(R)": -0.067,
+      "std(R)": 0.072,
+      "DD": 0.093,
+      "Sharpe": -0.931,
+      "Sortino": -0.717,
+      "MDD": 0.084,
+      "Calmar": -0.091,
+      "% +ve": 0.116,
+      "Ave P/L": 1.014
+    },
+    "seeds": [
+      47,
+      45,
+      48,
+      49,
+      50
+    ]
+  }
+}

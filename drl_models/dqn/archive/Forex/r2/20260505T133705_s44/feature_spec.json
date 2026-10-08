@@ -1,0 +1,39 @@
+{
+  "close_feature": {
+    "formula": "p_t / std_60(p)_t",
+    "name": "normalized_close_price_60d_rolling_std",
+    "note": "Repo convention for current 9-feature line."
+  },
+  "feature_dim": 9,
+  "feature_line": "structural_38_mainline",
+  "macd_feature": {
+    "formula": "q_t / std_252(q_t), where q_t = (EMA_short - EMA_long) / std_63(p)",
+    "name": "three_pair_macd_stack",
+    "pairs": [
+      [
+        8,
+        24
+      ],
+      [
+        16,
+        48
+      ],
+      [
+        32,
+        96
+      ]
+    ]
+  },
+  "preset": "structural_38",
+  "return_feature_formula": "(p_t - p_{t-H}) / (sigma_t * sqrt(H))",
+  "return_horizons": [
+    21,
+    42,
+    63,
+    252
+  ],
+  "rsi_window": 30,
+  "seq_len": 60,
+  "state_spec_version": "structural_38_close_norm_9d",
+  "volatility_estimator": "EWMA(60) std of additive r_t"
+}

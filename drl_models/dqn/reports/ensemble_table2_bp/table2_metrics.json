@@ -1,0 +1,72 @@
+{
+  "Commodity": {
+    "metrics": {
+      "E(R)": -0.908,
+      "std(R)": 0.97,
+      "DD": 0.64,
+      "Sharpe": -0.936,
+      "Sortino": -1.418,
+      "MDD": 0.355,
+      "Calmar": -0.127,
+      "% +ve": 0.469,
+      "Ave P/L": 0.967
+    },
+    "n_contracts": 24.0
+  },
+  "Equity Index": {
+    "metrics": {
+      "E(R)": -0.539,
+      "std(R)": 0.97,
+      "DD": 0.732,
+      "Sharpe": -0.555,
+      "Sortino": -0.736,
+      "MDD": 0.57,
+      "Calmar": -0.111,
+      "% +ve": 0.463,
+      "Ave P/L": 1.038
+    },
+    "n_contracts": 11.0
+  },
+  "Fixed Income": {
+    "metrics": {
+      "E(R)": -0.032,
+      "std(R)": 0.97,
+      "DD": 1.108,
+      "Sharpe": -0.033,
+      "Sortino": -0.029,
+      "MDD": 0.572,
+      "Calmar": -0.015,
+      "% +ve": 0.174,
+      "Ave P/L": 1.071
+    },
+    "n_contracts": 4.0
+  },
+  "Forex": {
+    "metrics": {
+      "E(R)": -1.25,
+      "std(R)": 0.97,
+      "DD": 0.9,
+      "Sharpe": -1.289,
+      "Sortino": -1.39,
+      "MDD": 1.31,
+      "Calmar": 0.0,
+      "% +ve": 0.309,
+      "Ave P/L": 0.903
+    },
+    "n_contracts": 9.0
+  },
+  "All": {
+    "metrics": {
+      "E(R)": -1.37,
+      "std(R)": 0.97,
+      "DD": 0.674,
+      "Sharpe": -1.413,
+      "Sortino": -2.031,
+      "MDD": 0.261,
+      "Calmar": -0.125,
+      "% +ve": 0.46,
+      "Ave P/L": 0.924
+    },
+    "n_contracts": 48.0
+  }
+}

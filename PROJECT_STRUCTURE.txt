@@ -1,0 +1,238 @@
+IEOR4733_Project — Project Structure
+================================================================================
+
+ROOT  (top-level files)
+├── baseline_run.py              Core backtesting engine — loads contracts,
+│                                computes returns, prints Table 3 metrics for
+│                                Long Only / Sign(R) / MACD
+├── config.py                    Global configuration: ASSET_CLASSES, contract
+│                                exclusions, SOURCE_OVERRIDES, sigma targets
+├── data_loader.py               load_clc_full() — reads CLCData RAD CSVs,
+│                                validates prices, aligns dates
+├── strategies.py                Position-sizing logic for Long Only, Sign(R),
+│                                MACD strategies
+├── metrics.py                   compute_metrics(), max_drawdown_from_path(),
+│                                cagr_from_path()
+├── indicators.py                Technical indicators: MACD signal, EWM vol, etc.
+├── vol_scaling.py               Volatility-targeting and position scaling
+├── repro_analysis.py            Diagnostic script: reproduced vs paper metrics
+├── generate_table3_comparison.py  Quick console Table 3 comparison (all 6 strategies)
+├── generate_table3_markdown.py  Writes Table 3 results to a Markdown file
+├── generate_results_tables.py   Exports full results CSVs used by the Streamlit app
+├── test_baseline.py             Unit tests for the baseline pipeline
+├── verify_setup.py              Checks data files and dependencies are present
+├── run_app.sh                   One-command launcher: activates venv + streamlit
+├── streamlit_requirements.txt   Python dependencies for the Streamlit app
+├── README.md                    Project overview, quickstart, tab guide,
+│                                folder descriptions
+└── PROJECT_STRUCTURE.txt        This file
+
+================================================================================
+
+src/                             Streamlit application code
+├── __init__.py
+├── app/
+│   ├── main.py                  ★ Entry point — all UI layout, data loading,
+│   │                              chart rendering (4 tabs)
+│   │                              TAB 1: Strategy Comparison
+│   │                              TAB 2: Performance Metrics
+│   │                              TAB 3: Risk Analysis
+│   │                              TAB 4: Data Pipeline
+│   ├── main_backup_v1.py        Earlier version kept for reference
+│   └── main_complex.py          Experimental richer version (not served)
+├── core/                        Modular core library (mirrors root-level scripts)
+│   ├── data/loader.py           Mirrors data_loader.py
+│   ├── strategies/base.py       Mirrors strategies.py
+│   ├── strategies/runner.py     Mirrors baseline_run.py
+│   ├── metrics/calculator.py    Mirrors metrics.py
+│   └── utils/indicators.py      Mirrors indicators.py
+├── notebooks/                   Jupyter notebooks under src
+└── scripts/                     Utility scripts under src
+
+================================================================================
+
+data/                            All market data
+├── CLC/                         ★ CLCData RAD format — one file per contract,
+│                                  three adjustment variants per symbol:
+│                                  {SYM}_RAD.CSV  — ratio-adjusted (primary)
+│                                  {SYM}_NON.CSV  — unadjusted
+│                                  {SYM}_REV.CSV  — reverse-adjusted
+│                                  (~50 contracts × 2-3 variants ≈ ~130 CSV files)
+├── yahoo/                       Yahoo Finance daily price CSVs (equity fallback)
+│   └── {SYM}_yahoo.csv          (CC, EN, ES, JO, LB, ZH, ZO)
+├── index_data.csv               Pre-merged index-level daily prices
+└── risk_free_rate.csv           Daily risk-free rate series (3-month T-bill)
+
+================================================================================
+
+reproduction_of_figures/         Reproduce the paper's strategy-comparison charts
+├── strategies_comparison.ipynb  ★ Master notebook — runs all 6 strategies,
+│                                  exports baseline_results/ CSVs
+├── baseline_results/            ★ Pre-computed CSVs (pure RAD, no overrides)
+│                                  READ BY THE STREAMLIT APP
+│                                  baseline_{strategy}_{asset}.csv
+│                                  (strategies: long_only, macd, sign(r))
+│                                  (assets: all, commodity, equity_index,
+│                                           fixed_income, forex)
+├── a2c_csv_data/                A2C cumulative PnL CSVs (cross-check data)
+│   ├── pnl_{asset}_{strategy}.csv
+│   ├── a2c_all_results_table2.csv
+│   ├── a2c_all_results_table3.csv
+│   ├── a2c_compare_vs_paper_table2.csv
+│   └── a2c_compare_vs_paper_table3.csv
+└── *.png                        Comparison figures (strategy overlays,
+                                 asset class breakdowns, route B overlays)
+
+================================================================================
+
+regime_detection/                Route B: FFT-based regime model on top of A2C
+├── timeseries_fft_regime.py     Core FFT regime classifier
+├── route_b_train.py             Training script for regime-conditioned A2C
+├── route_b_experiment.ipynb     Exploratory notebook for regime analysis
+├── reeval_route_b_final.py      ★ Final evaluation — generates results/ CSVs
+├── DIAGRAMS.md                  Architecture diagrams for Route B pipeline
+├── results/                     Per-asset, per-period output CSVs
+│   ├── pnl_routeB_{period}_{asset}.csv      Cumulative PnL (period 1 & 2)
+│   ├── regime_routeB_{period}_{asset}.csv   Regime classification series
+│   ├── regime_timeseries_{asset}.csv        Regime time-series by asset
+│   ├── full_regime_dfs.pkl                  Serialised regime DataFrames
+│   └── train_regime_results.pkl             Serialised training results
+├── regime_probabilities.png     Regime probability time-series plot
+└── regime_timeseries.png        Regime classification overlay plot
+
+================================================================================
+
+drl_models/                      Deep RL model weights and implementation
+├── a2c/
+│   ├── a2c_model.py             A2C model architecture (LSTM Actor-Critic)
+│   ├── loaddata.py              Data loader for A2C training/evaluation
+│   ├── README.md                A2C usage guide
+│   ├── a2c_project_readme_md.md Additional A2C documentation
+│   ├── a2c_results_wide改.csv   Wide-format A2C results (all assets, periods)
+│   ├── Original Reward/         Trained .pt weights — original reward function
+│   │   ├── a2c_{asset}_period{n}改.pt
+│   │   ├── loaddata改.py
+│   │   ├── project_code.ipynb
+│   │   ├── a2c_results_wide改.csv
+│   │   ├── a2c_table3_raw_signal_a2c_comparison_wide.csv
+│   │   ├── a2c_tc_*.csv         Transaction-cost robustness results
+│   │   └── a2c_transaction_cost_robustness_summary.csv
+│   └── Extention Reward/        Trained .pt weights — extended reward function
+│       ├── a2c_{asset}_period{n}_newreward.pt
+│       ├── loaddata_new_reward.py
+│       ├── project_code_new_reward.ipynb
+│       ├── new_reward_a2c_*.csv Transaction-cost robustness results
+│       └── new_reward_a2c_transaction_cost_robustness_summary.csv
+└── dqn/
+    ├── model.py                 DQN model architecture
+    ├── spec.py                  Feature / action space specification
+    ├── logging_utils.py         Training logging helpers
+    ├── __init__.py
+    ├── README.md
+    ├── finetuning_comparisons.md
+    ├── training_run_*.json      Saved training run configs
+    ├── train/                   Training entry points
+    │   ├── train_pipeline.py
+    │   ├── train_dqn_walkforward.py
+    │   ├── train_walkforward_multiseed.py
+    │   ├── train_exhibit5.py
+    │   ├── _train_single_contract.py
+    │   ├── test_resume.py
+    │   ├── test_training_pipeline.py
+    │   └── training_config.yaml
+    ├── backtest/                Walk-forward backtesting engine
+    │   ├── engine.py
+    │   └── backtest_dqn_walkforward.py
+    ├── models/                  Saved model checkpoints (populated after training)
+    ├── tests/                   Model diagnostics and validation scripts
+    │   ├── diagnose_model.py
+    │   ├── test_data_loader.py
+    │   └── verify_shared_dqn.py
+    ├── docs/                    DQN alignment and validation notes
+    │   ├── dqn_alignment_notes.md
+    │   └── shared_dqn_validation.md
+    ├── figures/                 Publication-ready figures and generation scripts
+    │   ├── paper_figure1_cumulative_returns.{py,png,pdf}
+    │   ├── exhibit4_per_contract_sharpe.{py,png,pdf}
+    │   ├── exhibit5_tc_impact.{py,png,pdf}
+    │   ├── supplementary_figures.py
+    │   ├── supp_{drawdown,monthly_heatmap,rolling_sharpe,yearly_bars}.png
+    │   ├── exhibit3_{asset}.csv
+    │   ├── export_bp_metrics.py
+    │   ├── export_figure_data.py
+    │   ├── figure_data.py
+    │   └── data/                Exported CSVs backing each figure
+    │       ├── exhibit4_data.csv
+    │       ├── exhibit5_*.csv
+    │       ├── paper_figure1_*.csv
+    │       ├── supp_*.csv
+    │       └── table3_data.csv
+    ├── reports/                 Ensemble evaluation results
+    │   ├── generate_ensemble_table2.py
+    │   ├── select_top_seeds_by_validation.py
+    │   ├── ensemble_findings.md
+    │   ├── ensemble_results.json
+    │   ├── ensemble_table2/     Per-asset ensemble Table 2 results
+    │   ├── ensemble_table2_bp/  Per-asset ensemble Table 2 (basis-point TC)
+    │   └── per_contract/        Per-contract walk-forward .npz report files
+    │       ├── Commodity/       {SYM}_s{seed}.npz  (~50 contracts × 10 seeds)
+    │       ├── Equity_Index/    {SYM}_s{seed}.npz
+    │       ├── Fixed_Income/    {SYM}_s{seed}.npz
+    │       └── Forex/           {SYM}_s{seed}.npz
+    └── archive/                 Early experimental training runs
+        ├── Commodity/r1/, r2/   Timestamped run folders with manifests
+        ├── Equity_Index/r1/, r2/
+        ├── Fixed_Income/r1/, r2/
+        └── Forex/r1/
+
+================================================================================
+
+baseline/                        Strategy-specific analysis scripts
+├── long_only/                   Long Only — sweep scripts and audit tools
+│   ├── run_legacy_41.py         Reproduces the 41/45 experimental upper bound
+│   ├── frontier_40plus_enumeration.py  Enumerates clean 40+ frontiers
+│   ├── calmar_alignment_iteration.py   Iterates toward Calmar alignment
+│   ├── results/                 Roll-date and roll-price validation CSVs
+│   │   ├── roll_date_truth.csv
+│   │   ├── roll_price_truth.csv
+│   │   └── roll_validation_final.csv
+│   └── (other audit, probe, and attribution scripts)
+├── macd/
+│   ├── run_legacy_41_macd.py    MACD upper-bound reproduction
+│   └── frontier_40plus_enumeration_macd.py
+└── signr/
+    ├── run_legacy_41_signr.py   Sign(R) upper-bound reproduction
+    └── frontier_40plus_enumeration_signr.py
+
+================================================================================
+
+config/                          Static configuration
+├── contract_months.json         Delivery months for each futures contract
+├── current_roll_mapping.txt     Active roll-date mapping used by data_loader
+└── TEMP/                        Raw CLC ASCII files ({SYM}_CLC.ASC) —
+                                 source data before CSV conversion (~90 files)
+
+================================================================================
+
+docs/                            Audit reports and analysis documents
+│                                (generated during development — explains
+│                                 design decisions and metric alignment)
+├── calmar_alignment_iteration.md
+├── table3_sweep_report.md
+├── table3_iteration_to_34.md
+├── metric_audit_report.md
+├── er_attribution_report.md
+├── rad_validation_report_50.md
+├── final_table3_comparison_report.md
+├── frontier_40plus_enumeration.md
+├── historical_36x_rebuild_search.md
+├── source_override_search_report.md
+├── all_row_contribution_report.md
+├── equity_contract_contribution_report.md
+├── equity_yf_rad_regen_probe.md
+├── table2_bridge_comparison_report.md
+└── table2&3_whole_baseline.md
+
+================================================================================
+
+NOTE: .venv/, .git/, __pycache__/ are excluded from this listing.

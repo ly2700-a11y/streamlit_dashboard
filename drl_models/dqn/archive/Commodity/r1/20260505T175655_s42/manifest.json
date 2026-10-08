@@ -1,0 +1,529 @@
+{
+  "algorithm": "dqn",
+  "architecture": {
+    "double_dqn": true,
+    "dueling_dqn": true,
+    "family": "lstm_dqn",
+    "fixed_q_targets": true,
+    "head": "dueling_value_advantage",
+    "lstm_hidden_sizes": [
+      64,
+      32
+    ],
+    "paper_reference_ids": [
+      49,
+      18,
+      50
+    ],
+    "target_network_update": "hard_copy_every_1000_learn_steps",
+    "target_update_tau": 1000
+  },
+  "asset_class": "Commodity",
+  "asset_class_count": 24,
+  "bp": 0.002,
+  "bundle_dir": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/dqn/models/Commodity/r1/20260505T175655_s42",
+  "continuous_action_range": [
+    -1.0,
+    1.0
+  ],
+  "contract_round_splits": {
+    "CC": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2762,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1504,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1503,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "DA": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2761,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1504,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1503,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "GI": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2769,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1510,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1509,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "JO": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2763,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1504,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1503,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "KC": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2762,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1504,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1503,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "KW": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2769,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1510,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1509,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "LB": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2766,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1510,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1509,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "NR": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2769,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1510,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1509,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "SB": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2762,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1504,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1503,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "ZC": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2770,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1511,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1510,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "ZF": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2769,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1510,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1509,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "ZG": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2768,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1509,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1508,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "ZH": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2766,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1507,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1506,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "ZI": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2768,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1509,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1508,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "ZK": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2767,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1508,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1507,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "ZL": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2770,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1511,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1510,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "ZN": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2765,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1506,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1505,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "ZO": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2768,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1509,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1508,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "ZP": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2768,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1509,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1508,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "ZR": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2770,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1511,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1510,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "ZT": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2769,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1510,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1509,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "ZU": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2764,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1505,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1504,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "ZW": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2770,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1511,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1510,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "ZZ": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2769,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1510,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1509,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    }
+  },
+  "cycles": 100,
+  "device": "cuda",
+  "discrete_action_values": [
+    -1.0,
+    0.0,
+    1.0
+  ],
+  "episodes_per_cycle": 24,
+  "ewma_span": 60,
+  "excluded_contracts": [
+    "FB",
+    "ZA"
+  ],
+  "feature_artifact_path": null,
+  "feature_artifact_paths": {
+    "CC": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/CC/r1.npz",
+    "DA": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/DA/r1.npz",
+    "GI": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/GI/r1.npz",
+    "JO": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/JO/r1.npz",
+    "KC": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/KC/r1.npz",
+    "KW": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/KW/r1.npz",
+    "LB": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/LB/r1.npz",
+    "NR": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/NR/r1.npz",
+    "SB": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/SB/r1.npz",
+    "ZC": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/ZC/r1.npz",
+    "ZF": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/ZF/r1.npz",
+    "ZG": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/ZG/r1.npz",
+    "ZH": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/ZH/r1.npz",
+    "ZI": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/ZI/r1.npz",
+    "ZK": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/ZK/r1.npz",
+    "ZL": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/ZL/r1.npz",
+    "ZN": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/ZN/r1.npz",
+    "ZO": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/ZO/r1.npz",
+    "ZP": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/ZP/r1.npz",
+    "ZR": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/ZR/r1.npz",
+    "ZT": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/ZT/r1.npz",
+    "ZU": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/ZU/r1.npz",
+    "ZW": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/ZW/r1.npz",
+    "ZZ": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/ZZ/r1.npz"
+  },
+  "feature_dim": 9,
+  "feature_line": "structural_38_mainline",
+  "feature_spec": {
+    "close_feature": {
+      "formula": "p_t / std_60(p)_t",
+      "name": "normalized_close_price_60d_rolling_std",
+      "note": "Repo convention for current 9-feature line."
+    },
+    "feature_dim": 9,
+    "feature_line": "structural_38_mainline",
+    "macd_feature": {
+      "formula": "q_t / std_252(q_t), where q_t = (EMA_short - EMA_long) / std_63(p)",
+      "name": "three_pair_macd_stack",
+      "pairs": [
+        [
+          8,
+          24
+        ],
+        [
+          16,
+          48
+        ],
+        [
+          32,
+          96
+        ]
+      ]
+    },
+    "preset": "structural_38",
+    "return_feature_formula": "(p_t - p_{t-H}) / (sigma_t * sqrt(H))",
+    "return_horizons": [
+      21,
+      42,
+      63,
+      252
+    ],
+    "rsi_window": 30,
+    "seq_len": 60,
+    "state_spec_version": "structural_38_close_norm_9d",
+    "volatility_estimator": "EWMA(60) std of additive r_t"
+  },
+  "hyperparameters": {
+    "batch_size": 64,
+    "dropout": 0.2,
+    "early_stopping_patience": 20,
+    "episodes": 100,
+    "eps_decay_steps": "dynamic",
+    "eps_end": 0.01,
+    "eps_schedule": [
+      [
+        0.0,
+        0.3
+      ],
+      [
+        0.2,
+        0.1
+      ],
+      [
+        0.5,
+        0.03
+      ],
+      [
+        0.9,
+        0.01
+      ],
+      [
+        1.0,
+        0.01
+      ]
+    ],
+    "eps_start": 1.0,
+    "epsilon_mode": "3_stage_percentage",
+    "gamma": 0.6,
+    "grad_clip_max_norm": 1.0,
+    "huber_delta": 1.0,
+    "leaky_relu_slope": 0.01,
+    "lr": 0.0001,
+    "lstm_hidden_sizes": [
+      64,
+      32
+    ],
+    "max_steps_per_ep": 5000,
+    "memory_ratio": 0.5,
+    "memory_size_default": 5000,
+    "memory_size_note": "actual value: max(5000, total_expected_steps * 0.5)",
+    "tau": 1000,
+    "use_huber_loss": false,
+    "validation_split": 0.1
+  },
+  "loaded_contracts": [
+    "CC",
+    "DA",
+    "GI",
+    "JO",
+    "KC",
+    "KW",
+    "LB",
+    "NR",
+    "SB",
+    "ZC",
+    "ZF",
+    "ZG",
+    "ZH",
+    "ZI",
+    "ZK",
+    "ZL",
+    "ZO",
+    "ZP",
+    "ZR",
+    "ZT",
+    "ZU",
+    "ZW",
+    "ZZ",
+    "ZN"
+  ],
+  "log_dir": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/dqn/models/Commodity/r1/20260505T175655_s42",
+  "macd_pairs": [
+    [
+      8,
+      24
+    ],
+    [
+      16,
+      48
+    ],
+    [
+      32,
+      96
+    ]
+  ],
+  "macd_vol_window": 63,
+  "market_feature_dim": 9,
+  "member_tickers": [
+    "CC",
+    "DA",
+    "GI",
+    "JO",
+    "KC",
+    "KW",
+    "LB",
+    "NR",
+    "SB",
+    "ZC",
+    "ZF",
+    "ZG",
+    "ZH",
+    "ZI",
+    "ZK",
+    "ZL",
+    "ZO",
+    "ZP",
+    "ZR",
+    "ZT",
+    "ZU",
+    "ZW",
+    "ZZ",
+    "ZN"
+  ],
+  "preset": "structural_38",
+  "return_horizons": [
+    21,
+    42,
+    63,
+    252
+  ],
+  "reward_spec": {
+    "name": "eq4_additive_price_difference",
+    "position_scale": "sigma_tgt / sigma_{t-1}",
+    "return_definition": "r_t = p_t - p_{t-1}",
+    "transaction_cost": "bp * p_{t-1} * abs(scaled_position_t - scaled_position_{t-1})"
+  },
+  "round": 1,
+  "round_info": {
+    "test_end": "2015-12-31",
+    "test_start": "2011-01-01",
+    "train_end": "2010-12-31",
+    "train_start": "2005-01-01"
+  },
+  "rsi_window": 30,
+  "run_id": "20260505T175655_s42",
+  "seed": 42,
+  "seq_len": 60,
+  "sigma_tgt": 0.058,
+  "skipped_contracts": [],
+  "source_overrides": {
+    "CC": "RAD_REGEN",
+    "DA": "RAD_REGEN",
+    "DT": "RAD",
+    "EN": "REV",
+    "ES": "RAD_REGEN",
+    "GI": "RAD_REGEN",
+    "JN": "REV",
+    "JO": "RAD_REGEN",
+    "KW": "REV",
+    "LB": "RAD",
+    "MP": "RAD_REGEN",
+    "NK": "RAD_REGEN",
+    "SC": "RAD_REGEN",
+    "SN": "REV",
+    "SP": "RAD_REGEN",
+    "ZA": "RAD_REGEN",
+    "ZF": "REV",
+    "ZG": "RAD_REGEN",
+    "ZH": "RAD_REGEN",
+    "ZI": "REV",
+    "ZK": "REV",
+    "ZN": "REV",
+    "ZO": "RAD_REGEN",
+    "ZR": "REV",
+    "ZT": "RAD_REGEN",
+    "ZU": "REV",
+    "ZW": "REV"
+  },
+  "spec_version": "asset_class_structural38_mainline",
+  "state_spec_version": "structural_38_close_norm_9d",
+  "ticker": null,
+  "total_planned_contract_episodes": 2400,
+  "training_mode": "asset_class_shared"
+}

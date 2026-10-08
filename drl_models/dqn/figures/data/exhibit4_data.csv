@@ -1,0 +1,481 @@
+ticker,asset,seed,sharpe
+CC,Commodity,42,-0.283587
+DA,Commodity,42,-0.743167
+GI,Commodity,42,-0.285192
+JO,Commodity,42,-0.21518
+KC,Commodity,42,-0.236139
+KW,Commodity,42,-0.720643
+LB,Commodity,42,-0.077565
+NR,Commodity,42,-0.372999
+SB,Commodity,42,-1.107027
+ZC,Commodity,42,-0.239422
+ZF,Commodity,42,-0.5455
+ZG,Commodity,42,-0.378132
+ZH,Commodity,42,-0.712154
+ZI,Commodity,42,-0.222764
+ZK,Commodity,42,-0.619737
+ZL,Commodity,42,-0.637188
+ZO,Commodity,42,0.220391
+ZP,Commodity,42,-0.116752
+ZR,Commodity,42,-0.468364
+ZT,Commodity,42,-0.394657
+ZU,Commodity,42,-0.78391
+ZW,Commodity,42,-0.360511
+ZZ,Commodity,42,-1.043215
+ZN,Commodity,42,-0.644341
+CC,Commodity,43,-0.068365
+DA,Commodity,43,-0.043681
+GI,Commodity,43,0.059211
+JO,Commodity,43,-0.127197
+KC,Commodity,43,-0.005508
+KW,Commodity,43,-0.216123
+LB,Commodity,43,0.121865
+NR,Commodity,43,0.252501
+SB,Commodity,43,-0.347238
+ZC,Commodity,43,0.056995
+ZF,Commodity,43,-0.122855
+ZG,Commodity,43,0.519756
+ZH,Commodity,43,0.033674
+ZI,Commodity,43,0.321039
+ZK,Commodity,43,0.03289
+ZL,Commodity,43,-0.088943
+ZO,Commodity,43,-0.06157
+ZP,Commodity,43,-0.074139
+ZR,Commodity,43,-0.41145
+ZT,Commodity,43,-0.34044
+ZU,Commodity,43,-0.313798
+ZW,Commodity,43,-0.497479
+ZZ,Commodity,43,-0.704457
+ZN,Commodity,43,-0.060304
+CC,Commodity,44,-0.099505
+DA,Commodity,44,-0.909828
+GI,Commodity,44,-0.218305
+JO,Commodity,44,-0.087538
+KC,Commodity,44,0.214539
+KW,Commodity,44,0.014264
+LB,Commodity,44,0.021967
+NR,Commodity,44,-0.605882
+SB,Commodity,44,-0.175098
+ZC,Commodity,44,-0.1918
+ZF,Commodity,44,-0.468302
+ZG,Commodity,44,-0.226996
+ZH,Commodity,44,-0.264717
+ZI,Commodity,44,0.426875
+ZK,Commodity,44,0.114316
+ZL,Commodity,44,-0.243686
+ZO,Commodity,44,-0.37182
+ZP,Commodity,44,0.568841
+ZR,Commodity,44,-0.306115
+ZT,Commodity,44,
+ZU,Commodity,44,-0.394476
+ZW,Commodity,44,0.166485
+ZZ,Commodity,44,-0.131106
+ZN,Commodity,44,-0.052915
+CC,Commodity,45,-0.383787
+DA,Commodity,45,0.222198
+GI,Commodity,45,-0.522885
+JO,Commodity,45,0.370609
+KC,Commodity,45,-0.393107
+KW,Commodity,45,-0.242247
+LB,Commodity,45,0.282837
+NR,Commodity,45,-0.320355
+SB,Commodity,45,-0.398858
+ZC,Commodity,45,-0.178683
+ZF,Commodity,45,0.07232
+ZG,Commodity,45,-0.537998
+ZH,Commodity,45,-0.620316
+ZI,Commodity,45,-0.679774
+ZK,Commodity,45,0.311697
+ZL,Commodity,45,-0.29254
+ZO,Commodity,45,0.063493
+ZP,Commodity,45,0.151102
+ZR,Commodity,45,-0.438296
+ZT,Commodity,45,-0.229214
+ZU,Commodity,45,-0.817723
+ZW,Commodity,45,-0.414911
+ZZ,Commodity,45,-0.400062
+ZN,Commodity,45,-0.41537
+CC,Commodity,46,-0.517129
+DA,Commodity,46,0.515989
+GI,Commodity,46,-0.316285
+JO,Commodity,46,-0.08016
+KC,Commodity,46,-0.250189
+KW,Commodity,46,-0.728279
+LB,Commodity,46,0.092762
+NR,Commodity,46,-0.602757
+SB,Commodity,46,-0.63865
+ZC,Commodity,46,-0.313842
+ZF,Commodity,46,-0.210356
+ZG,Commodity,46,0.00741
+ZH,Commodity,46,0.051615
+ZI,Commodity,46,0.411177
+ZK,Commodity,46,-0.199573
+ZL,Commodity,46,-0.682651
+ZO,Commodity,46,0.451868
+ZP,Commodity,46,-0.957895
+ZR,Commodity,46,-1.003588
+ZT,Commodity,46,-0.538488
+ZU,Commodity,46,-0.949091
+ZW,Commodity,46,-0.838613
+ZZ,Commodity,46,-0.888831
+ZN,Commodity,46,-0.352478
+CC,Commodity,47,-0.212318
+DA,Commodity,47,-0.593582
+GI,Commodity,47,-0.010856
+JO,Commodity,47,0.134173
+KC,Commodity,47,-0.034742
+KW,Commodity,47,-0.11845
+LB,Commodity,47,0.322267
+NR,Commodity,47,0.005838
+SB,Commodity,47,0.06694
+ZC,Commodity,47,-0.209899
+ZF,Commodity,47,-0.56612
+ZG,Commodity,47,-0.044365
+ZH,Commodity,47,-0.400031
+ZI,Commodity,47,-0.097631
+ZK,Commodity,47,0.182701
+ZL,Commodity,47,-0.119821
+ZO,Commodity,47,-0.379545
+ZP,Commodity,47,-0.180526
+ZR,Commodity,47,0.413981
+ZT,Commodity,47,-0.432134
+ZU,Commodity,47,-0.146774
+ZW,Commodity,47,-1.04085
+ZZ,Commodity,47,-0.469028
+ZN,Commodity,47,-0.96076
+CC,Commodity,48,-0.623658
+DA,Commodity,48,-0.415688
+GI,Commodity,48,-1.063048
+JO,Commodity,48,-0.2976
+KC,Commodity,48,-0.174348
+KW,Commodity,48,-0.95936
+LB,Commodity,48,0.167986
+NR,Commodity,48,-0.744788
+SB,Commodity,48,-0.098876
+ZC,Commodity,48,-0.618654
+ZF,Commodity,48,0.376211
+ZG,Commodity,48,-0.330744
+ZH,Commodity,48,0.151865
+ZI,Commodity,48,-0.463682
+ZK,Commodity,48,-0.431765
+ZL,Commodity,48,-0.57669
+ZO,Commodity,48,0.154284
+ZP,Commodity,48,-0.792636
+ZR,Commodity,48,-0.031929
+ZT,Commodity,48,-0.819072
+ZU,Commodity,48,-1.011476
+ZW,Commodity,48,-0.680936
+ZZ,Commodity,48,-0.235209
+ZN,Commodity,48,-0.728292
+CC,Commodity,49,0.068985
+DA,Commodity,49,-0.129625
+GI,Commodity,49,-0.26708
+JO,Commodity,49,-0.398791
+KC,Commodity,49,-0.00081
+KW,Commodity,49,-0.51037
+LB,Commodity,49,-0.119942
+NR,Commodity,49,-0.080775
+SB,Commodity,49,-0.512612
+ZC,Commodity,49,-0.755532
+ZF,Commodity,49,-0.267364
+ZG,Commodity,49,-0.111168
+ZH,Commodity,49,-0.379946
+ZI,Commodity,49,0.188759
+ZK,Commodity,49,-0.231327
+ZL,Commodity,49,-0.815164
+ZO,Commodity,49,0.040459
+ZP,Commodity,49,-0.440628
+ZR,Commodity,49,-0.348126
+ZT,Commodity,49,0.094138
+ZU,Commodity,49,-0.492861
+ZW,Commodity,49,-0.385667
+ZZ,Commodity,49,-0.347432
+ZN,Commodity,49,-0.180197
+CC,Commodity,50,0.24348
+DA,Commodity,50,-0.575256
+GI,Commodity,50,-0.471273
+JO,Commodity,50,0.193402
+KC,Commodity,50,0.207516
+KW,Commodity,50,-0.97596
+LB,Commodity,50,0.059903
+NR,Commodity,50,-0.060008
+SB,Commodity,50,-0.241417
+ZC,Commodity,50,-0.239923
+ZF,Commodity,50,-0.000114
+ZG,Commodity,50,-0.268294
+ZH,Commodity,50,0.118631
+ZI,Commodity,50,-0.488013
+ZK,Commodity,50,-0.54416
+ZL,Commodity,50,-0.594212
+ZO,Commodity,50,-0.344495
+ZP,Commodity,50,-0.458055
+ZR,Commodity,50,-0.645352
+ZT,Commodity,50,-0.397859
+ZU,Commodity,50,-0.307105
+ZW,Commodity,50,-0.245304
+ZZ,Commodity,50,-0.207373
+ZN,Commodity,50,-0.594393
+CC,Commodity,51,-0.2844
+DA,Commodity,51,-0.400007
+GI,Commodity,51,-0.057186
+JO,Commodity,51,-0.057471
+KC,Commodity,51,-0.039115
+KW,Commodity,51,0.363197
+LB,Commodity,51,0.529405
+NR,Commodity,51,0.354848
+SB,Commodity,51,-0.034424
+ZC,Commodity,51,-0.14936
+ZF,Commodity,51,-0.948656
+ZG,Commodity,51,0.623918
+ZH,Commodity,51,-0.012738
+ZI,Commodity,51,0.732
+ZK,Commodity,51,0.03763
+ZL,Commodity,51,0.361947
+ZO,Commodity,51,0.708415
+ZP,Commodity,51,0.14982
+ZR,Commodity,51,-0.003745
+ZT,Commodity,51,-0.086195
+ZU,Commodity,51,-0.103102
+ZW,Commodity,51,-0.158048
+ZZ,Commodity,51,-0.337691
+ZN,Commodity,51,0.029286
+CA,Equity Index,42,0.016808
+EN,Equity Index,42,-0.013083
+ER,Equity Index,42,0.161058
+ES,Equity Index,42,-0.257731
+LX,Equity Index,42,-1.05126
+MD,Equity Index,42,-0.159994
+SC,Equity Index,42,-0.310051
+SP,Equity Index,42,-0.287979
+XU,Equity Index,42,-0.12948
+XX,Equity Index,42,-0.069834
+YM,Equity Index,42,-0.738743
+CA,Equity Index,43,0.072018
+EN,Equity Index,43,-0.193534
+ER,Equity Index,43,-0.394946
+ES,Equity Index,43,-0.485552
+LX,Equity Index,43,-0.60972
+MD,Equity Index,43,-0.078586
+SC,Equity Index,43,-0.511266
+SP,Equity Index,43,-0.499461
+XU,Equity Index,43,-0.374964
+XX,Equity Index,43,-0.341625
+YM,Equity Index,43,-0.452694
+CA,Equity Index,44,-0.161112
+EN,Equity Index,44,-0.114207
+ER,Equity Index,44,0.409416
+ES,Equity Index,44,-0.508353
+LX,Equity Index,44,-0.245983
+MD,Equity Index,44,0.001716
+SC,Equity Index,44,-0.479584
+SP,Equity Index,44,-0.479628
+XU,Equity Index,44,-0.158079
+XX,Equity Index,44,-0.154805
+YM,Equity Index,44,-0.782822
+CA,Equity Index,45,0.081039
+EN,Equity Index,45,-0.205947
+ER,Equity Index,45,-0.014951
+ES,Equity Index,45,-0.065363
+LX,Equity Index,45,-0.501572
+MD,Equity Index,45,-0.351321
+SC,Equity Index,45,-0.067552
+SP,Equity Index,45,-0.08909
+XU,Equity Index,45,-0.645601
+XX,Equity Index,45,-0.524342
+YM,Equity Index,45,-0.673931
+CA,Equity Index,46,-0.326069
+EN,Equity Index,46,-0.398095
+ER,Equity Index,46,-0.483163
+ES,Equity Index,46,-0.18265
+LX,Equity Index,46,-0.984434
+MD,Equity Index,46,-0.390197
+SC,Equity Index,46,-0.132129
+SP,Equity Index,46,-0.132113
+XU,Equity Index,46,-0.647035
+XX,Equity Index,46,-1.041675
+YM,Equity Index,46,-0.618074
+CA,Equity Index,47,-0.66471
+EN,Equity Index,47,-0.193313
+ER,Equity Index,47,0.045308
+ES,Equity Index,47,-0.30956
+LX,Equity Index,47,-0.437144
+MD,Equity Index,47,-0.676881
+SC,Equity Index,47,-0.29857
+SP,Equity Index,47,-0.311245
+XU,Equity Index,47,-0.513067
+XX,Equity Index,47,-0.144289
+YM,Equity Index,47,-0.315244
+CA,Equity Index,48,0.140646
+EN,Equity Index,48,-0.342565
+ER,Equity Index,48,0.153574
+ES,Equity Index,48,-0.52576
+LX,Equity Index,48,-0.201226
+MD,Equity Index,48,-0.115265
+SC,Equity Index,48,-0.529162
+SP,Equity Index,48,-0.529247
+XU,Equity Index,48,-0.012908
+XX,Equity Index,48,-0.316449
+YM,Equity Index,48,-0.552861
+CA,Equity Index,49,0.002088
+EN,Equity Index,49,0.257578
+ER,Equity Index,49,-0.46262
+ES,Equity Index,49,-0.44585
+LX,Equity Index,49,-1.033347
+MD,Equity Index,49,-0.954331
+SC,Equity Index,49,-0.452396
+SP,Equity Index,49,-0.450576
+XU,Equity Index,49,-0.276155
+XX,Equity Index,49,-0.443736
+YM,Equity Index,49,-0.388172
+CA,Equity Index,50,0.047249
+EN,Equity Index,50,-0.162252
+ER,Equity Index,50,-0.225154
+ES,Equity Index,50,-0.128391
+LX,Equity Index,50,-1.119841
+MD,Equity Index,50,-0.40965
+SC,Equity Index,50,-0.116635
+SP,Equity Index,50,-0.116599
+XU,Equity Index,50,-0.080513
+XX,Equity Index,50,-0.448877
+YM,Equity Index,50,-0.47577
+CA,Equity Index,51,-0.452813
+EN,Equity Index,51,-0.520407
+ER,Equity Index,51,-0.497714
+ES,Equity Index,51,-0.354445
+LX,Equity Index,51,-0.227217
+MD,Equity Index,51,-0.450951
+SC,Equity Index,51,-0.330828
+SP,Equity Index,51,-0.333131
+XU,Equity Index,51,-0.571952
+XX,Equity Index,51,-0.347348
+YM,Equity Index,51,-0.454375
+DT,Fixed Income,42,0.10205
+TY,Fixed Income,42,0.029955
+UB,Fixed Income,42,-0.085818
+US,Fixed Income,42,-0.479727
+DT,Fixed Income,43,0.095045
+TY,Fixed Income,43,
+UB,Fixed Income,43,
+US,Fixed Income,43,-0.155885
+DT,Fixed Income,44,0.005101
+TY,Fixed Income,44,0.220966
+UB,Fixed Income,44,-0.188358
+US,Fixed Income,44,-0.13626
+DT,Fixed Income,45,-0.014603
+TY,Fixed Income,45,0.03013
+UB,Fixed Income,45,-0.006133
+US,Fixed Income,45,0.156925
+DT,Fixed Income,46,-0.300969
+TY,Fixed Income,46,-0.074051
+UB,Fixed Income,46,0.209559
+US,Fixed Income,46,-0.496629
+DT,Fixed Income,47,0.298187
+TY,Fixed Income,47,0.298918
+UB,Fixed Income,47,0.129887
+US,Fixed Income,47,0.018039
+DT,Fixed Income,48,0.177672
+TY,Fixed Income,48,0.304068
+UB,Fixed Income,48,0.058702
+US,Fixed Income,48,0.264927
+DT,Fixed Income,49,0.141066
+TY,Fixed Income,49,0.090859
+UB,Fixed Income,49,-0.316732
+US,Fixed Income,49,0.170055
+DT,Fixed Income,50,0.216233
+TY,Fixed Income,50,-0.321001
+UB,Fixed Income,50,
+US,Fixed Income,50,0.055161
+DT,Fixed Income,51,0.014545
+TY,Fixed Income,51,-0.151093
+UB,Fixed Income,51,
+US,Fixed Income,51,-0.035697
+AN,Forex,42,-0.80027
+BN,Forex,42,0.241079
+CN,Forex,42,-0.521635
+DX,Forex,42,-0.464
+FN,Forex,42,-0.331219
+JN,Forex,42,-0.560245
+MP,Forex,42,0.252964
+NK,Forex,42,-0.365932
+SN,Forex,42,-0.59103
+AN,Forex,43,-0.492877
+BN,Forex,43,-0.700029
+CN,Forex,43,-1.178657
+DX,Forex,43,-0.880677
+FN,Forex,43,-0.463721
+JN,Forex,43,-0.373779
+MP,Forex,43,-0.753583
+NK,Forex,43,-0.589989
+SN,Forex,43,-1.367653
+AN,Forex,44,-0.887989
+BN,Forex,44,-0.290606
+CN,Forex,44,-1.057879
+DX,Forex,44,0.463618
+FN,Forex,44,-0.756832
+JN,Forex,44,-0.693765
+MP,Forex,44,-0.421608
+NK,Forex,44,0.257612
+SN,Forex,44,-0.433195
+AN,Forex,45,-1.018791
+BN,Forex,45,-0.703106
+CN,Forex,45,-1.523205
+DX,Forex,45,-0.425677
+FN,Forex,45,-0.851212
+JN,Forex,45,-1.262891
+MP,Forex,45,-0.414843
+NK,Forex,45,-0.257112
+SN,Forex,45,-0.417304
+AN,Forex,46,-0.690774
+BN,Forex,46,-0.268907
+CN,Forex,46,-1.031728
+DX,Forex,46,-0.829685
+FN,Forex,46,-0.236105
+JN,Forex,46,-1.049521
+MP,Forex,46,-0.768704
+NK,Forex,46,-0.462735
+SN,Forex,46,-0.746509
+AN,Forex,47,-0.447783
+BN,Forex,47,-0.25914
+CN,Forex,47,-0.456234
+DX,Forex,47,-0.118678
+FN,Forex,47,-0.765814
+JN,Forex,47,-0.556099
+MP,Forex,47,-0.085989
+NK,Forex,47,-0.437716
+SN,Forex,47,-0.090049
+AN,Forex,48,-0.841534
+BN,Forex,48,-0.480075
+CN,Forex,48,-0.634574
+DX,Forex,48,0.171219
+FN,Forex,48,-0.367106
+JN,Forex,48,-1.053511
+MP,Forex,48,-0.580516
+NK,Forex,48,-0.515736
+SN,Forex,48,-0.575944
+AN,Forex,49,-0.04819
+BN,Forex,49,0.013599
+CN,Forex,49,-0.282194
+DX,Forex,49,-0.477941
+FN,Forex,49,0.230018
+JN,Forex,49,-0.409832
+MP,Forex,49,-0.150089
+NK,Forex,49,-0.287617
+SN,Forex,49,-0.510722
+AN,Forex,50,-1.024382
+BN,Forex,50,-0.606536
+CN,Forex,50,-1.187605
+DX,Forex,50,-1.069989
+FN,Forex,50,-0.684239
+JN,Forex,50,-1.36111
+MP,Forex,50,-0.604648
+NK,Forex,50,-0.401626
+SN,Forex,50,-0.620692
+AN,Forex,51,-0.756905
+BN,Forex,51,0.149511
+CN,Forex,51,-0.137795
+DX,Forex,51,0.017256
+FN,Forex,51,-0.241103
+JN,Forex,51,-0.978282
+MP,Forex,51,-0.09054
+NK,Forex,51,-0.105868
+SN,Forex,51,-0.317393

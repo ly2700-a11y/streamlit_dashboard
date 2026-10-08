@@ -1,0 +1,74 @@
+# DQN Training Configuration
+# Single source of truth for all DQN training runs.
+# Backtest and inference code reads this to ensure consistency.
+
+version: 1
+
+# Feature configuration (must match drl_shared/spec.py)
+feature:
+  preset: structural_38
+  feature_line: structural_38_pruned_v2
+  state_spec_version: structural_38_pruned_v2_5d
+  feature_dim: 5
+  market_feature_dim: 5
+  seq_len: 60
+
+# Hyperparameters (paper Table 1)
+hyperparameters:
+  lr: 0.0001
+  gamma: 0.3
+  batch_size: 64
+  memory_size: 5000
+  tau: 1000                # hard target update every N learn steps
+  eps_start: 0.3
+  eps_end: 0.3
+  eps_decay_steps: null       # constant epsilon mainline
+  episodes: 200
+  max_steps_per_ep: 10000000  # non-binding safety guardrail only
+  lstm_hidden_sizes: [64, 32]
+  leaky_relu_slope: 0.01
+  dropout: 0.2
+
+# Training configuration
+training:
+  sigma_tgt: 0.058         # position scaling target volatility
+  validation_split: 0.10
+  val_start_offset: seq_len  # val env starts at (split - seq_len) for warmup
+  early_stopping_patience: 20
+  n_seeds: 5               # per-contract multi-seed runs
+  warmup: 252
+
+# Architecture
+architecture:
+  type: lstm_dqn
+  dueling: true
+  double_dqn: true
+  head: dueling_value_advantage
+
+# Reward
+reward:
+  type: eq4_additive_price_difference
+  return_definition: "r_t = p_t - p_{t-1}"
+  position_scale: "sigma_tgt / sigma_{t-1}"
+
+# Execution defaults
+execution:
+  parallel: 4              # default parallel workers
+  device: cuda
+  log_dir: logs/rl
+
+# Asset classes (from config.py ASSET_CLASSES)
+asset_classes:
+  Fixed Income: [DT, TY, UB, US]
+  Forex: [AN, BN, CN, DX, FN, JN, MP, NK, SN]
+  Equity Index: [CA, EN, ER, ES, LX, MD, SC, SP, XU, XX, YM]
+  Commodity: [CC, DA, GI, JO, KC, KW, LB, NR, SB, ZC, ZF, ZG, ZH, ZI, ZK, ZL, ZO, ZP, ZR, ZT, ZU, ZW, ZZ, ZN]
+
+# Retrain rounds
+rounds:
+  1:
+    train: "2005-01-03"
+    test: "2011-01-03"
+  2:
+    train: "2011-01-03"
+    test: "2017-01-03"

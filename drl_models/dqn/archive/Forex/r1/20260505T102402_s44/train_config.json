@@ -1,0 +1,52 @@
+{
+  "batch_size": 64,
+  "cycles": 100,
+  "dropout": 0.2,
+  "early_stopping_patience": 20,
+  "episodes": 100,
+  "eps_decay_steps": "dynamic",
+  "eps_end": 0.01,
+  "eps_schedule": [
+    [
+      0.0,
+      0.3
+    ],
+    [
+      0.2,
+      0.1
+    ],
+    [
+      0.5,
+      0.03
+    ],
+    [
+      0.9,
+      0.01
+    ],
+    [
+      1.0,
+      0.01
+    ]
+  ],
+  "eps_start": 1.0,
+  "eps_total_steps": 998600,
+  "epsilon_mode": "3_stage_percentage",
+  "gamma": 0.6,
+  "grad_clip_max_norm": 1.0,
+  "huber_delta": 1.0,
+  "leaky_relu_slope": 0.01,
+  "lr": 0.0001,
+  "lstm_hidden_sizes": [
+    64,
+    32
+  ],
+  "max_steps_per_ep": 5000,
+  "memory_ratio": 0.5,
+  "memory_size": 5000,
+  "memory_size_default": 5000,
+  "memory_size_note": "actual value: max(5000, total_expected_steps * 0.5)",
+  "seed": 44,
+  "tau": 1000,
+  "use_huber_loss": false,
+  "validation_split": 0.1
+}

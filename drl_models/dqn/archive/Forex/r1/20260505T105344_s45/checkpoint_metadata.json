@@ -1,0 +1,339 @@
+{
+  "algorithm": "dqn",
+  "architecture": {
+    "double_dqn": true,
+    "dueling_dqn": true,
+    "family": "lstm_dqn",
+    "fixed_q_targets": true,
+    "head": "dueling_value_advantage",
+    "lstm_hidden_sizes": [
+      64,
+      32
+    ],
+    "paper_reference_ids": [
+      49,
+      18,
+      50
+    ],
+    "target_network_update": "hard_copy_every_1000_learn_steps",
+    "target_update_tau": 1000
+  },
+  "asset_class": "Forex",
+  "asset_class_count": 9,
+  "best_val_reward": 1.004389187325449,
+  "bp": 0.002,
+  "bundle_dir": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/dqn/models/Forex/r1/20260505T105344_s45",
+  "completed_cycles": 89,
+  "continuous_action_range": [
+    -1.0,
+    1.0
+  ],
+  "contract_round_splits": {
+    "AN": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2778,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1517,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1516,
+      "train_start": "2005-01-01",
+      "train_start_idx": 1
+    },
+    "BN": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2777,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1516,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1515,
+      "train_start": "2005-01-01",
+      "train_start_idx": 1
+    },
+    "CN": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2769,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1508,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1507,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "DX": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2802,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1520,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1519,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "FN": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2769,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1509,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1508,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "JN": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2772,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1511,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1510,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "MP": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2761,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1507,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1506,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "NK": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2809,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1520,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1519,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    },
+    "SN": {
+      "test_end": "2015-12-31",
+      "test_end_idx": 2772,
+      "test_start": "2011-01-01",
+      "test_start_idx": 1511,
+      "train_end": "2010-12-31",
+      "train_end_idx": 1510,
+      "train_start": "2005-01-01",
+      "train_start_idx": 0
+    }
+  },
+  "cycles": 100,
+  "device": "cuda",
+  "discrete_action_values": [
+    -1.0,
+    0.0,
+    1.0
+  ],
+  "early_stopped": true,
+  "episodes_per_cycle": 9,
+  "ewma_span": 60,
+  "excluded_contracts": [
+    "FB",
+    "ZA"
+  ],
+  "feature_artifact_path": null,
+  "feature_artifact_paths": {
+    "AN": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/AN/r1.npz",
+    "BN": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/BN/r1.npz",
+    "CN": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/CN/r1.npz",
+    "DX": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/DX/r1.npz",
+    "FN": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/FN/r1.npz",
+    "JN": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/JN/r1.npz",
+    "MP": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/MP/r1.npz",
+    "NK": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/NK/r1.npz",
+    "SN": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/features/SN/r1.npz"
+  },
+  "feature_dim": 9,
+  "feature_line": "structural_38_mainline",
+  "feature_spec": {
+    "close_feature": {
+      "formula": "p_t / std_60(p)_t",
+      "name": "normalized_close_price_60d_rolling_std",
+      "note": "Repo convention for current 9-feature line."
+    },
+    "feature_dim": 9,
+    "feature_line": "structural_38_mainline",
+    "macd_feature": {
+      "formula": "q_t / std_252(q_t), where q_t = (EMA_short - EMA_long) / std_63(p)",
+      "name": "three_pair_macd_stack",
+      "pairs": [
+        [
+          8,
+          24
+        ],
+        [
+          16,
+          48
+        ],
+        [
+          32,
+          96
+        ]
+      ]
+    },
+    "preset": "structural_38",
+    "return_feature_formula": "(p_t - p_{t-H}) / (sigma_t * sqrt(H))",
+    "return_horizons": [
+      21,
+      42,
+      63,
+      252
+    ],
+    "rsi_window": 30,
+    "seq_len": 60,
+    "state_spec_version": "structural_38_close_norm_9d",
+    "volatility_estimator": "EWMA(60) std of additive r_t"
+  },
+  "hyperparameters": {
+    "batch_size": 64,
+    "dropout": 0.2,
+    "early_stopping_patience": 20,
+    "episodes": 100,
+    "eps_decay_steps": "dynamic",
+    "eps_end": 0.01,
+    "eps_schedule": [
+      [
+        0.0,
+        0.3
+      ],
+      [
+        0.2,
+        0.1
+      ],
+      [
+        0.5,
+        0.03
+      ],
+      [
+        0.9,
+        0.01
+      ],
+      [
+        1.0,
+        0.01
+      ]
+    ],
+    "eps_start": 1.0,
+    "epsilon_mode": "3_stage_percentage",
+    "gamma": 0.6,
+    "grad_clip_max_norm": 1.0,
+    "huber_delta": 1.0,
+    "leaky_relu_slope": 0.01,
+    "lr": 0.0001,
+    "lstm_hidden_sizes": [
+      64,
+      32
+    ],
+    "max_steps_per_ep": 5000,
+    "memory_ratio": 0.5,
+    "memory_size_default": 5000,
+    "memory_size_note": "actual value: max(5000, total_expected_steps * 0.5)",
+    "tau": 1000,
+    "use_huber_loss": false,
+    "validation_split": 0.1
+  },
+  "learn_steps": 220717,
+  "loaded_contracts": [
+    "AN",
+    "BN",
+    "CN",
+    "DX",
+    "FN",
+    "JN",
+    "MP",
+    "NK",
+    "SN"
+  ],
+  "log_dir": "/home/congge2026/.openclaw/workspace/IEOR4733_Project/drl/dqn/models/Forex/r1/20260505T105344_s45",
+  "macd_pairs": [
+    [
+      8,
+      24
+    ],
+    [
+      16,
+      48
+    ],
+    [
+      32,
+      96
+    ]
+  ],
+  "macd_vol_window": 63,
+  "market_feature_dim": 9,
+  "member_tickers": [
+    "AN",
+    "BN",
+    "CN",
+    "DX",
+    "FN",
+    "JN",
+    "MP",
+    "NK",
+    "SN"
+  ],
+  "preset": "structural_38",
+  "return_horizons": [
+    21,
+    42,
+    63,
+    252
+  ],
+  "reward_spec": {
+    "name": "eq4_additive_price_difference",
+    "position_scale": "sigma_tgt / sigma_{t-1}",
+    "return_definition": "r_t = p_t - p_{t-1}",
+    "transaction_cost": "bp * p_{t-1} * abs(scaled_position_t - scaled_position_{t-1})"
+  },
+  "round": 1,
+  "round_info": {
+    "test_end": "2015-12-31",
+    "test_start": "2011-01-01",
+    "train_end": "2010-12-31",
+    "train_start": "2005-01-01"
+  },
+  "rsi_window": 30,
+  "run_id": "20260505T105344_s45",
+  "seed": 45,
+  "seq_len": 60,
+  "sigma_tgt": 0.058,
+  "skipped_contracts": [],
+  "source_overrides": {
+    "CC": "RAD_REGEN",
+    "DA": "RAD_REGEN",
+    "DT": "RAD",
+    "EN": "REV",
+    "ES": "RAD_REGEN",
+    "GI": "RAD_REGEN",
+    "JN": "REV",
+    "JO": "RAD_REGEN",
+    "KW": "REV",
+    "LB": "RAD",
+    "MP": "RAD_REGEN",
+    "NK": "RAD_REGEN",
+    "SC": "RAD_REGEN",
+    "SN": "REV",
+    "SP": "RAD_REGEN",
+    "ZA": "RAD_REGEN",
+    "ZF": "REV",
+    "ZG": "RAD_REGEN",
+    "ZH": "RAD_REGEN",
+    "ZI": "REV",
+    "ZK": "REV",
+    "ZN": "REV",
+    "ZO": "RAD_REGEN",
+    "ZR": "REV",
+    "ZT": "RAD_REGEN",
+    "ZU": "REV",
+    "ZW": "REV"
+  },
+  "spec_version": "asset_class_structural38_mainline",
+  "state_spec_version": "structural_38_close_norm_9d",
+  "target_updates": 220,
+  "ticker": null,
+  "total_planned_contract_episodes": 900,
+  "training_mode": "asset_class_shared"
+}
